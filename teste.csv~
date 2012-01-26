@@ -1,2 +1,7 @@
 teste;1
 teste;2
+<<<<<<< HEAD
+teste;3
+=======
+teste;4
+>>>>>>> 1dff96383217492d5c63d0792f844b90cc18d2ff
