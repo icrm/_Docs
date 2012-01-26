@@ -1,0 +1,48 @@
+Item;Seq;Sequencia;Status;Descrição Problema;Direcionado ao link;Direcionado a página;Observação
+1;1;acesso ao link: http://localhost:8080/Herbalife/admin/;OK;N/A;;Login;N/A
+1;2;teste com usuário e senha inválido;OK;N/A;"http://localhost:8080/Herbalife/admin/login.xhtml;jsessionid=2EC6DAA171369FC682F47B6AAEF97D2D";Login;"Mensagem ""Usuário e/ou Senha inválidos!"" aparece"
+1;3;teste com usuário e senha válido;OK;N/A;http://localhost:8080/Herbalife/admin/login.xhtml;Home;N/A
+1;1;acesso ao link: http://localhost:8080/Herbalife/admin/;OK;N/A;;Login;N/A
+1;2;teste com usuário e senha válido;Erro;Usuário não direcionado para página Home;"http://localhost:8080/Herbalife/admin/login.xhtml;jsessionid=5482C9F22C414EF0A4C1AAF1438BCD11";Login;"- Deveria direcionar para página Home
+- Quando é inserido a senha errada, e depois a correta a pagina é direcionada corretamente."
+2;1;acesso a página Home;OK;N/A;;Home;N/A
+2;2;"Clique no link ""Sair""";Erro;Não direcionado para página de Login;http://localhost:8080/Herbalife/admin/index.xhtml;index;"- Mensagem ""Acesso Negado!"" aparece
+- Quando essa sequencia acontece, não consigo mais acessar a tela de login através do link: http://localhost:8080/Herbalife/admin/, o erro persiste"
+2;1;acesso a página Home;OK;N/A;;Home;N/A
+2;2;teste de direcionamento dos links às devidas páginas;OK;Direcionando às páginas;N/A;Direcionamento OK;N/A
+3;1;acesso a página Cadastro de Usuários;OK;OK;http://localhost:8080/Herbalife/admin/user/add_user.xhtml;add_user.xhtml;N/A
+3;2;teste de preenchimento dos campos (inclusao);Erro;Ao lado no campo observacao todos os itens relacionados;http://localhost:8080/Herbalife/admin/user/add_user.xhtml;add_user.xhtml;"- Sugestão: Colocar um * para os campos obrigatórios e uma legenda para esse *.
+- Melhoria: Não aceitar caracteres inválidos no Nome, como: !@#$%^&*().
+- Melhoria: Não aceitar senha com menos de 6 e mais de 10 caracteres.
+- Problema com o campo Data de Inclusão que não é preenchido na tela."
+3;3;teste de preenchimento dos campos (edicao);Erro;Ao lado no campo observacao todos os itens relacionados;http://localhost:8080/Herbalife/admin/user/add_user.xhtml;add_user.xhtml;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
